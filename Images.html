@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Google Images Search</title>
+        <title>Google</title>
+        <link rel="shortcut icon" href="favicon.ico" type="favicon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          .select_button{
+            background-color: #4285F4;
+            color: white;
+            border-radius: 3.5px;
+          }
+          #search_tab{
+            border-radius: 50px;
+          }
+          .center{
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -244px;
+            margin-left: -246px;
+          }
+        </style>
     </head>
     <body>
-    <form method="get" action="http://images.google.com/images">
-      <input type="text" name="q" />
-      <button type="submit" form="form1" value="Submit">Search Google Images</button>
-    </form>
+      <div style="text-align: right">
+        <button class="select_button" onclick="document.location='Googel.html'">Google Search</button>
+        <button class="select_button" onclick="document.location='Images.html'">Google Images</button>
+        <button class="select_button" onclick="document.location='Advanced.html'">Google Advanced Search</button>
+      </div>
+        <br>
+        <div class="center">
+          <form action="https://google.com/images">
+              <img style = "width: 270px; height:90px"src = "google_logo.png">
+              <br>
+              <br>
+              <input style="width: 500px; height: 50px; font-size: 25px; font-family: "Product Sans", sans-serif;" id="search_tab" type="text" name="q">
+              <br>
+              <br>
+              <button style="width: 100px; height: 25px;" type="submit" form="form1" value="Submit">Search</button>
+          </form>
+        </div>
     </body>
 </html>
